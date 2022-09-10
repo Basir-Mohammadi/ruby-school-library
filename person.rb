@@ -1,7 +1,6 @@
 require './nameable'
 require './rental'
-
-
+require 'date'
 class Person < Nameable
   attr_reader :id, :rentals
   attr_accessor :age, :name
@@ -15,7 +14,7 @@ class Person < Nameable
     @rentals = []
   end
 
-  def add_rental(book, date)
+  def add_rental(book, _date)
     Rental.new(person: self, book: book)
   end
 
