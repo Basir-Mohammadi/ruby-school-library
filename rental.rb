@@ -7,7 +7,7 @@ class Rental
   # @param person [Person]
   # @param book [Book]
   def initialize(person:, book:)
-    @date = DateTime.now.to_s
+    @date = DateTime.now.strftime('%Y/%m/%d %H:%M')
 
     @person = person
     person.rentals << self
