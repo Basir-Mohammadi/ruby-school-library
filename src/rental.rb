@@ -17,5 +17,4 @@ class Rental
   def assign_person
     @person.rentals << self unless @person.rentals.include? self
   end
-  
 end

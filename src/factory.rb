@@ -30,7 +30,7 @@ class Factory < UserPrompt
 
   def show_allowed_options
     puts "please select on of the following options by typing the number:\n\n"
-    
+
     options = [
       'Create person',
       'Create classroom',
