@@ -1,6 +1,6 @@
-# School Library Command-Line Program
+# School Library Program
 
-A command line program that mimics a typical school library operations flow. 
+A program that mimics a typical school library operations flow. 
 Designed using Ruby Object Oriented Programming (OOP) approach.
 
 
