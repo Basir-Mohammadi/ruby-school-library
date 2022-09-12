@@ -10,7 +10,7 @@ class Factory < UserPrompt
   end
 
   def run
-    show_allowed_options
+    options
     prompt
   end
 
@@ -28,10 +28,10 @@ class Factory < UserPrompt
 
   private
 
-  def show_allowed_options
+  def options
     puts "please select on of the following options by typing the number:\n\n"
 
-    options = [
+    commands = [
       'Create person',
       'Create classroom',
       'Create book',
@@ -42,6 +42,6 @@ class Factory < UserPrompt
       'List all rentals by person',
       'Quit'
     ]
-    list_with_index(options)
+    list_with_index(commands)
   end
 end
